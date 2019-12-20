@@ -46,4 +46,7 @@ describe "./calculator.rb" do
 
     expect(quotient).to eq(first_number/second_number)
   end
+  
+  it "contains a local variable called modulo that is assigned to the result of taking the modulo of first_number and second_number" do
+    first_number = get_variable_from_file('.calculator.rb', "first_number")
 end
